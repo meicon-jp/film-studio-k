@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import FadeInSection from '../components/FadeInSection';
 
 export const metadata = {
   title: '実績 | Film Studio K',
@@ -100,8 +101,9 @@ export default function Works() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {works.map((work) => (
-              <div key={work.id} className="group cursor-pointer">
+            {works.map((work, index) => (
+              <FadeInSection key={work.id} delay={index * 50}>
+                <div className="group cursor-pointer">
                 <div className="relative aspect-[4/3] mb-4 overflow-hidden rounded-lg bg-gray-100">
                   <Image
                     src={work.image}
@@ -122,7 +124,8 @@ export default function Works() {
                   <h3 className="text-lg md:text-xl font-bold mb-2">{work.title}</h3>
                   <p className="text-sm text-gray-600">{work.description}</p>
                 </div>
-              </div>
+                </div>
+              </FadeInSection>
             ))}
           </div>
         </div>
@@ -132,18 +135,20 @@ export default function Works() {
       {/* CTA */}
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            撮影のご依頼・お見積もり
-          </h2>
-          <p className="text-lg mb-8 text-gray-300">
-            お気軽にお問い合わせください
-          </p>
-          <a
-            href="/contact"
-            className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-lg font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
-          >
-            お問い合わせフォーム
-          </a>
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              撮影のご依頼・お見積もり
+            </h2>
+            <p className="text-lg mb-8 text-gray-300">
+              お気軽にお問い合わせください
+            </p>
+            <a
+              href="/contact"
+              className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-lg font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
+            >
+              お問い合わせフォーム
+            </a>
+          </FadeInSection>
         </div>
       </section>
     </div>

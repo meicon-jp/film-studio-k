@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import FadeInSection from '../components/FadeInSection';
 
 export const metadata = {
   title: '会社概要 | Film Studio K',
@@ -19,9 +20,12 @@ export default function About() {
       {/* 基本情報 */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Company Info</h2>
-          
-          <div className="space-y-6">
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Company Info</h2>
+          </FadeInSection>
+
+          <FadeInSection delay={100}>
+            <div className="space-y-6">
             <div className="flex flex-col md:flex-row border-b pb-6">
               <dt className="md:w-1/3 font-bold text-gray-700 mb-2 md:mb-0">会社名</dt>
               <dd className="md:w-2/3 text-gray-600">Film Studio K</dd>
@@ -50,16 +54,20 @@ export default function About() {
               <dt className="md:w-1/3 font-bold text-gray-700 mb-2 md:mb-0">代表</dt>
               <dd className="md:w-2/3 text-gray-600">芝田 敬</dd>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* 企業理念 */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Philosophy</h2>
-          
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Philosophy</h2>
+          </FadeInSection>
+
+          <FadeInSection delay={100}>
+            <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">企業概念</h3>
             
             <div className="space-y-6 text-gray-700 leading-relaxed">
@@ -92,39 +100,48 @@ export default function About() {
                 みんなが優しく幸せになれる社会を目指します
               </p>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* ビジョン */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Vision</h2>
-          
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Vision</h2>
+          </FadeInSection>
+
           <div className="space-y-12">
-            <div className="bg-gray-50 p-8 md:p-12 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">人×地域×社会</h3>
-              <p className="text-gray-700 leading-relaxed">
-                社会貢献では企業や町とタッグを組んでよりその地域を活性させるための撮影などを行いたいと思います。
-              </p>
-            </div>
+            <FadeInSection delay={100}>
+              <div className="bg-gray-50 p-8 md:p-12 rounded-lg">
+                <h3 className="text-xl md:text-2xl font-bold mb-4">人×地域×社会</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  社会貢献では企業や町とタッグを組んでよりその地域を活性させるための撮影などを行いたいと思います。
+                </p>
+              </div>
+            </FadeInSection>
 
-            <div className="bg-gray-50 p-8 md:p-12 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">能登の魅力を伝える</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                今能登の人口が減少しつつある中で、人が集まりたくなるコンテンツを作ります。輪島塗りなど残さないといけない伝統芸能においては、職人の良さが伝わる写真や動画などを作り積極的にPRしていきたいと思います。
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                能登には地震で失った場所もありますが、まだ残したい景色がたくさんあります。
-              </p>
-            </div>
+            <FadeInSection delay={200}>
+              <div className="bg-gray-50 p-8 md:p-12 rounded-lg">
+                <h3 className="text-xl md:text-2xl font-bold mb-4">能登の魅力を伝える</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  今能登の人口が減少しつつある中で、人が集まりたくなるコンテンツを作ります。輪島塗りなど残さないといけない伝統芸能においては、職人の良さが伝わる写真や動画などを作り積極的にPRしていきたいと思います。
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  能登には地震で失った場所もありますが、まだ残したい景色がたくさんあります。
+                </p>
+              </div>
+            </FadeInSection>
 
-            <div className="bg-gray-50 p-8 md:p-12 rounded-lg">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">共生社会の実現</h3>
-              <p className="text-gray-700 leading-relaxed">
-                障害者と健常者が一緒に地域に溶け込める偏見のない社会が出来ることが目標であり、絵が得意な人、もの作りが得意な人、それぞれができる個性を活かした写真や動画を作り、個展などで動画など流せたらと思います。理解ある世の中にしたいです。
-              </p>
-            </div>
+            <FadeInSection delay={300}>
+              <div className="bg-gray-50 p-8 md:p-12 rounded-lg">
+                <h3 className="text-xl md:text-2xl font-bold mb-4">共生社会の実現</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  障害者と健常者が一緒に地域に溶け込める偏見のない社会が出来ることが目標であり、絵が得意な人、もの作りが得意な人、それぞれができる個性を活かした写真や動画を作り、個展などで動画など流せたらと思います。理解ある世の中にしたいです。
+                </p>
+              </div>
+            </FadeInSection>
           </div>
         </div>
       </section>
@@ -132,9 +149,12 @@ export default function About() {
       {/* 代表プロフィール */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Profile</h2>
-          
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Profile</h2>
+          </FadeInSection>
+
+          <FadeInSection delay={100}>
+            <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
               <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-lg overflow-hidden">
                 <Image
@@ -168,7 +188,8 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
     </div>

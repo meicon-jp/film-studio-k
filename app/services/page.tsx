@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import FadeInSection from '../components/FadeInSection';
 
 export const metadata = {
   title: '事業内容 | Film Studio K',
@@ -20,7 +21,8 @@ export default function Services() {
       {/* 写真撮影 */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <FadeInSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <span className="inline-block text-sm font-bold text-gray-500 mb-2">01</span>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">写真撮影</h2>
@@ -69,14 +71,16 @@ export default function Services() {
                 />
               </div>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* 動画撮影 */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <FadeInSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="relative h-96 md:h-[600px] rounded-lg overflow-hidden shadow-2xl">
                 <Image
@@ -125,14 +129,16 @@ export default function Services() {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* ドローン撮影 */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <FadeInSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <span className="inline-block text-sm font-bold text-gray-500 mb-2">03</span>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">ドローン撮影</h2>
@@ -181,51 +187,60 @@ export default function Services() {
                 />
               </div>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* カテゴリー別実績 */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">撮影カテゴリー</h2>
-          
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">撮影カテゴリー</h2>
+          </FadeInSection>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold mb-4">写真撮影</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• 記念写真(七五三、成人式、入学式)</li>
-                <li>• ファミリーフォト</li>
-                <li>• ブライダルフォト</li>
-                <li>• プロフィール写真</li>
-                <li>• ペット撮影</li>
-                <li>• 商品撮影</li>
-              </ul>
-            </div>
+            <FadeInSection delay={100}>
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-bold mb-4">写真撮影</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 記念写真(七五三、成人式、入学式)</li>
+                  <li>• ファミリーフォト</li>
+                  <li>• ブライダルフォト</li>
+                  <li>• プロフィール写真</li>
+                  <li>• ペット撮影</li>
+                  <li>• 商品撮影</li>
+                </ul>
+              </div>
+            </FadeInSection>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold mb-4">動画撮影</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• 企業VP・プロモーション</li>
-                <li>• イベント記録</li>
-                <li>• 想いを伝える動画</li>
-                <li>• ウェディングムービー</li>
-                <li>• 採用動画</li>
-                <li>• 商品紹介動画</li>
-              </ul>
-            </div>
+            <FadeInSection delay={200}>
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-bold mb-4">動画撮影</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 企業VP・プロモーション</li>
+                  <li>• イベント記録</li>
+                  <li>• 想いを伝える動画</li>
+                  <li>• ウェディングムービー</li>
+                  <li>• 採用動画</li>
+                  <li>• 商品紹介動画</li>
+                </ul>
+              </div>
+            </FadeInSection>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold mb-4">ドローン撮影</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• 風景・観光地撮影</li>
-                <li>• 不動産空撮</li>
-                <li>• イベント空撮</li>
-                <li>• 地域PR動画</li>
-                <li>• 建築物撮影</li>
-                <li>• 能登の景観記録</li>
-              </ul>
-            </div>
+            <FadeInSection delay={300}>
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-bold mb-4">ドローン撮影</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 風景・観光地撮影</li>
+                  <li>• 不動産空撮</li>
+                  <li>• イベント空撮</li>
+                  <li>• 地域PR動画</li>
+                  <li>• 建築物撮影</li>
+                  <li>• 能登の景観記録</li>
+                </ul>
+              </div>
+            </FadeInSection>
           </div>
         </div>
       </section>
@@ -233,14 +248,17 @@ export default function Services() {
       {/* 対応エリア */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">対応エリア</h2>
-          <p className="text-gray-700 leading-relaxed mb-8">
-            石川県内すべての市町村での撮影に対応しています。<br />
-            金沢市、能登エリアを中心に、県内各地の美しいロケーションでの撮影が可能です。<br />
-            県外への出張撮影もご相談ください。
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600 mt-8">
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">対応エリア</h2>
+            <p className="text-gray-700 leading-relaxed mb-8">
+              石川県内すべての市町村での撮影に対応しています。<br />
+              金沢市、能登エリアを中心に、県内各地の美しいロケーションでの撮影が可能です。<br />
+              県外への出張撮影もご相談ください。
+            </p>
+          </FadeInSection>
+
+          <FadeInSection delay={100}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600 mt-8">
             <div>金沢市</div>
             <div>七尾市</div>
             <div>輪島市</div>
@@ -259,25 +277,28 @@ export default function Services() {
             <div>中能登町</div>
             <div>穴水町</div>
             <div>能登町</div>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            撮影のご相談はお気軽に
-          </h2>
-          <p className="text-lg mb-8 text-gray-300">
-            お客様のご要望に合わせた最適なプランをご提案いたします
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-lg font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
-          >
-            お問い合わせ
-          </Link>
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              撮影のご相談はお気軽に
+            </h2>
+            <p className="text-lg mb-8 text-gray-300">
+              お客様のご要望に合わせた最適なプランをご提案いたします
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-lg font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
+            >
+              お問い合わせ
+            </Link>
+          </FadeInSection>
         </div>
       </section>
     </div>

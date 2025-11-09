@@ -1,3 +1,5 @@
+import FadeInSection from '../components/FadeInSection';
+
 export const metadata = {
   title: 'プライバシーポリシー | Film Studio K',
   description: 'Film Studio Kのプライバシーポリシーをご確認いただけます。',
@@ -17,8 +19,9 @@ export default function Privacy() {
       {/* プライバシーポリシー本文 */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 mb-8">
+          <FadeInSection>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray-600 mb-8">
               Film Studio K（以下「当スタジオ」といいます。）は、お客様の個人情報保護の重要性について認識し、
               個人情報の保護に関する法律（以下「個人情報保護法」といいます。）を遵守すると共に、
               以下のプライバシーポリシー（以下「本ポリシー」といいます。）に従い、
@@ -120,7 +123,8 @@ export default function Privacy() {
             </section>
 
             <p className="text-right text-gray-600 mt-12">制定日：2024年1月1日</p>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
     </div>
