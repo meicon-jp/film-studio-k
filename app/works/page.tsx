@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import FadeInSection from '../components/FadeInSection';
+import Link from 'next/link';
 
 export const metadata = {
   title: '実績 | Film Studio K',
