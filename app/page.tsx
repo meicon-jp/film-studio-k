@@ -248,16 +248,16 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInSection>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
               お気軽にお問い合わせください
             </h2>
-            <p className="text-lg md:text-xl mb-8 text-gray-300">
+            <p className="text-lg md:text-lg mb-8 text-gray-300">
               撮影のご相談、お見積もりなど<br className="md:hidden" />
               お気軽にご連絡ください
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-lg font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
+              className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-md font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
             >
               お問い合わせフォームへ
             </Link>

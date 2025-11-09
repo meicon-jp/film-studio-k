@@ -93,7 +93,7 @@ export default function Works() {
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Works</h1>
-          <p className="text-lg md:text-xl text-gray-300">撮影実績</p>
+          <p className="text-lg md:text-lg text-gray-300">撮影実績</p>
         </div>
       </section>
 
@@ -121,7 +121,7 @@ export default function Works() {
                   <span className="inline-block text-xs font-bold text-gray-500 mb-2">
                     {work.category}
                   </span>
-                  <h3 className="text-lg md:text-xl font-bold mb-2">{work.title}</h3>
+                  <h3 className="text-lg md:text-lg font-bold mb-2">{work.title}</h3>
                   <p className="text-sm text-gray-600">{work.description}</p>
                 </div>
                 </div>
@@ -136,18 +136,19 @@ export default function Works() {
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInSection>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              撮影のご依頼・お見積もり
-            </h2>
-            <p className="text-lg mb-8 text-gray-300">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
               お気軽にお問い合わせください
+            </h2>
+            <p className="text-lg md:text-lg mb-8 text-gray-300">
+              撮影のご相談、お見積もりなど<br className="md:hidden" />
+              お気軽にご連絡ください
             </p>
-            <a
+            <Link
               href="/contact"
-              className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-lg font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
+              className="inline-block bg-gray-900 text-white border-2 border-white px-8 py-4 rounded-lg shadow-lg hover:shadow-2xl text-md font-semibold hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
             >
-              お問い合わせフォーム
-            </a>
+              お問い合わせフォームへ
+            </Link>
           </FadeInSection>
         </div>
       </section>

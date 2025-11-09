@@ -13,7 +13,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
-          <p className="text-lg md:text-xl text-gray-300">会社概要</p>
+          <p className="text-lg md:text-lg text-gray-300">会社概要</p>
         </div>
       </section>
 
