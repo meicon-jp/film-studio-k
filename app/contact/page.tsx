@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 // metadata は server component でのみ使用可能なため削除
 
@@ -46,12 +47,31 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-16 md:pt-20">
-      {/* ヘッダー */}
-      <section className="py-16 md:py-24 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Contact</h1>
-          <p className="text-lg md:text-lg text-gray-300">お問い合わせ</p>
+    <div>
+      {/* ヒーローセクション - ダーク・スタイリッシュ */}
+      <section className="relative h-screen flex items-center justify-start overflow-hidden bg-neutral-900">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero.png"
+            alt="Contact"
+            fill
+            className="object-cover opacity-40"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 text-left text-white px-8 md:px-16 lg:px-24 max-w-4xl">
+          <p className="text-sm md:text-base mb-4 tracking-widest font-light opacity-80 fade-in">
+            Get In Touch
+          </p>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 fade-in leading-tight">
+            Contact
+          </h1>
+          <p className="text-base md:text-xl mb-12 fade-in font-light leading-relaxed max-w-2xl">
+            お気軽に<br />
+            お問い合わせください
+          </p>
         </div>
       </section>
 
