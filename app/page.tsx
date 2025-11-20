@@ -9,13 +9,13 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-start overflow-hidden bg-neutral-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/S__5013540_0.jpg"
+            src="/images/main_hero.png"
             alt="Film Studio K"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-40 -scale-x-100"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
         </div>
 
         <div className="relative z-10 text-left text-white px-8 md:px-16 lg:px-24 max-w-4xl">
