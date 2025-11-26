@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-left text-white px-8 md:px-16 lg:px-24 max-w-4xl">
-          <div className="backdrop-blur-sm  p-8">
+          <div className="">
             <p className="text-sm md:text-base mb-4 tracking-widest font-light opacity-90 fade-in">
               Photographer Film Studio K
             </p>
