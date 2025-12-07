@@ -54,6 +54,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/news" className="group/link relative text-gray-300 hover:text-white transition-all duration-300 inline-flex items-center gap-2">
+                    <span className="w-0 h-0.5 bg-gradient-to-r from-green-400 to-cyan-400 group-hover/link:w-4 transition-all duration-300"></span>
+                    お知らせ
+                  </Link>
+                </li>
+                <li>
                   <Link href="/contact" className="group/link relative text-gray-300 hover:text-white transition-all duration-300 inline-flex items-center gap-2">
                     <span className="w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 group-hover/link:w-4 transition-all duration-300"></span>
                     お問い合わせ
